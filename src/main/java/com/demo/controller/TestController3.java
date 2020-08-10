@@ -17,7 +17,7 @@ public class TestController3 {
 	private static final Logger logger = LoggerFactory.getLogger(TestController3.class);
 	
 	//  요청주소 :   /board/write
-	@RequestMapping(value = "write", method = RequestMethod.GET)
+	@RequestMapping(value = "/write", method = RequestMethod.GET)
 	public void writeForm() {
 		
 		
@@ -32,7 +32,7 @@ public class TestController3 {
 	
 	
 	// RedirectAttributes : 리다이렉트되는 주소로 파라미터값을 제공을 하고 자 할때 사용
-	@RequestMapping(value = "writeOk2", method = RequestMethod.POST)
+	@RequestMapping(value = "/writeOk2", method = RequestMethod.POST)
 	public String writeAction(RedirectAttributes rttr) {
 			
 		
@@ -46,7 +46,7 @@ public class TestController3 {
 	}
 	
 	// 요청주소   :   /board/list
-	@RequestMapping(value = "list", method = RequestMethod.GET)
+	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public String list() {
 		
 		return "/board/list";
